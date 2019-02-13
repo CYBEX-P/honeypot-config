@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /home/cowrie/cowrie/var/log/cowrie/cowrie.json
+
+output.logstash:
+  hosts: ["192.168.1.20:5044"]
